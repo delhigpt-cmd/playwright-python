@@ -1,10 +1,13 @@
 {
-    "name": "Python Playwright Codespace",
-    "image": "mcr.microsoft.com/devcontainers/python:3.10",
-    "postCreateCommand": "pip install -r requirements.txt && playwright install",
-    "customizations": {
-        "vscode": {
-            "extensions": ["ms-python.python", "ms-playwright.playwright"]
-        }
+  "name": "Python Playwright Codespace",
+  "image": "mcr.microsoft.com/playwright/python:v1.45.0-focal",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-playwright.playwright"
+      ]
     }
+  }
 }
